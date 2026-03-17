@@ -266,6 +266,14 @@ curl http://localhost:35000/shutdown
 ```
 
 ---
+### docker deployment
+add a tag
+<img width="961" height="38" alt="image" src="https://github.com/user-attachments/assets/4b9e03ba-dff5-4034-b1c9-3f16bf456bab" />
+verify
+<img width="880" height="24" alt="image" src="https://github.com/user-attachments/assets/30ae636a-f8d2-4b0e-85e7-7fe2cd88d29b" />
+look in docker hub
+<img width="1887" height="516" alt="image" src="https://github.com/user-attachments/assets/0a6dc456-bdd4-402b-8b61-df6b26461f78" />
+
 
 ## Author
 
