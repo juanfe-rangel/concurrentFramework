@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSpringboot - Web Server Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #3498db;
+            border-radius: 3px;
+            display: inline-block;
+            margin: 5px;
+        }
+        a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        img {
+            max-width: 200px;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 MicroSpringboot Web Server</h1>
+    
+    <div class="section">
+        <h2>Bienvenido al Servidor Web</h2>
+        <p>Este es un servidor web minimalista construido en Java con capacidades IoC (Inversión de Control).</p>
+        <p>El servidor demuestra las capacidades reflexivas de Java para cargar POJOs y construir aplicaciones web.</p>
+    </div>
+
+    <div class="section">
+        <h2>Endpoints Disponibles</h2>
+        <p><strong>Controladores REST:</strong></p>
+        <ul>
+            <li><a href="/">/</a> - Página principal</li>
+            <li><a href="/hello">/hello</a> - Saludo simple</li>
+            <li><a href="/pi">/pi</a> - Valor de PI</li>
+            <li><a href="/greeting">/greeting</a> - Saludo con parámetro (sin parámetro)</li>
+            <li><a href="/greeting?name=Juan">/greeting?name=Juan</a> - Saludo personalizado</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Archivos Estáticos</h2>
+        <p>El servidor soporta archivos HTML y PNG:</p>
+        <ul>
+            <li><a href="/index.html">/index.html</a> - Esta página</li>
+            <li><a href="/test.png">/test.png</a> - Imagen de prueba</li>
+        </ul>
+        <img src="/test.png" alt="Test Image">
+    </div>
+
+    <div class="section">
+        <h2>Características Implementadas</h2>
+        <ul>
+            <li>✅ Anotaciones <code>@RestController</code> y <code>@GetMapping</code></li>
+            <li>✅ Soporte para <code>@RequestParam</code> con valores por defecto</li>
+            <li>✅ Carga de controladores desde línea de comandos</li>
+            <li>✅ Escaneo automático del classpath</li>
+            <li>✅ Servidor HTTP para múltiples solicitudes no concurrentes</li>
+            <li>✅ Servir archivos HTML y PNG estáticos</li>
+            <li>✅ Framework IoC basado en reflexión</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Ejemplos de Uso</h2>
+        <p><strong>Modo 1: Cargar controladores específicos</strong></p>
+        <code>java -cp target/classes org.example.MicroSpringboot org.example.HelloController org.example.GreetingController</code>
+        
+        <p style="margin-top: 15px;"><strong>Modo 2: Escaneo automático del classpath</strong></p>
+        <code>java -cp target/classes org.example.MicroSpringboot --scan</code>
+    </div>
+</body>
+</html>
