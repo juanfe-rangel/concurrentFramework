@@ -1,6 +1,6 @@
 # Concurrent Framework 
 
-A minimalist web framework built in pure Java without external dependencies, implementing a concurrent HTTP server with support for annotations, dependency injection through reflection, and graceful shutdown.
+A minimalist web framework built in pure Java without external dependencies, implementing a concurrent HTTP server with support for annotations, dependency injection through reflection, and shutdown.
 
 ---
 
