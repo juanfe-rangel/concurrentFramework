@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  framework:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: concurrent-framework
+    ports:
+      - "35000:35000"
+    environment:
+      - PORT=35000
+    restart: unless-stopped
