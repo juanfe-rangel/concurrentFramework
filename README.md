@@ -152,9 +152,9 @@ while (!concurrentRequest.isShuttingDown()) {
 }
 ```
 
-### 2. **Graceful Shutdown**
+### 2. ** Shutdown**
 
-The framework supports graceful shutdown without losing in-progress requests.
+The framework supports shutdown without losing in-progress requests.
 
 **Shutdown endpoint:**
 ```bash
@@ -168,7 +168,7 @@ curl http://localhost:35000/shutdown
 
 ---
 
-## 🔍 How Reflection Works
+##  How Reflection Works
 
 The framework uses Java Reflection to:
 
